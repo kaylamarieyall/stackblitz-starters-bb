@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Haven Bookstore | Gallery</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%20100%20100'%3E%3Crect width='100' height='100' fill='%232e2e4e'/%3E%3Ctext x='50' y='55' font-family='Arial,sans-serif' font-size='60' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html" aria-label="Book Haven Bookstore home">
+          <img src="images/book-haven-logo.png" alt="Book Haven Bookstore logo" class="logo" />
+        </a>
+        <div>
+          <p class="eyebrow">Discover Your Next Great Read</p>
+          <h1>Book Haven Bookstore</h1>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <div>
+          <p class="eyebrow">Gallery</p>
+          <h2>Browse all Book Haven products</h2>
+          <p>Choose from our featured books, magazines, and bookstore accessories.</p>
+        </div>
+        <button id="viewCartBtn" type="button" class="cart-button">View Cart</button>
+      </section>
+
+      <section class="gallery-grid" aria-label="Book Haven product gallery">
+        <article class="product-card">
+          <img src="images/brie-mine.png" alt="Cover art for Brie Mine 4Ever" />
+          <span class="category-badge">Book</span>
+          <h3>Brie Mine 4Ever</h3>
+          <p>A lighthearted romance novel with charm, humor, and a memorable happily-ever-after.</p>
+          <button type="button" class="add-to-cart" data-product="Brie Mine 4Ever">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/glory-riders.png" alt="Cover art for Glory Riders" />
+          <span class="category-badge">Book</span>
+          <h3>Glory Riders</h3>
+          <p>An action-packed western adventure about loyalty, courage, and long roads.</p>
+          <button type="button" class="add-to-cart" data-product="Glory Riders">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/sorcerers-shadowed-chronicles.png" alt="Cover art for Sorcerer's Shadowed Chronicles" />
+          <span class="category-badge">Book</span>
+          <h3>Sorcerer's Shadowed Chronicles</h3>
+          <p>A fantasy tale filled with ancient secrets, shadow magic, and bold choices.</p>
+          <button type="button" class="add-to-cart" data-product="Sorcerer's Shadowed Chronicles">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/ball-magazine.png" alt="Cover for Ball magazine" />
+          <span class="category-badge">Magazine</span>
+          <h3>BALL Magazine</h3>
+          <p>A sports magazine for readers who follow teams, athletes, and game-day stories.</p>
+          <button type="button" class="add-to-cart" data-product="Ball magazine">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/travel-magazine.png" alt="Cover for Travel magazine" />
+          <span class="category-badge">Magazine</span>
+          <h3>TRAVEL Magazine</h3>
+          <p>A destination-focused magazine with guides, essays, and travel inspiration.</p>
+          <button type="button" class="add-to-cart" data-product="Travel magazine">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/eat-magazine.png" alt="Cover for Eat. magazine" />
+          <span class="category-badge">Magazine</span>
+          <h3>EAT. Magazine</h3>
+          <p>A food magazine for curious cooks, restaurant fans, and flavor seekers.</p>
+          <button type="button" class="add-to-cart" data-product="Eat. magazine">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/read-tote.png" alt="All I Do Is Read Read Read tote bag" />
+          <span class="category-badge">Gift</span>
+          <h3>All I Do Is Read Read Read tote bag</h3>
+          <p>A roomy tote bag made for library hauls, bookstore trips, and daily carry.</p>
+          <button type="button" class="add-to-cart" data-product="All I Do Is Read Read Read tote bag">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/notebook.png" alt="Book Haven notebook with lined pages" />
+          <span class="category-badge">Stationery</span>
+          <h3>Book Haven notebook</h3>
+          <p>A clean notebook for class notes, reading lists, drafts, and reflections.</p>
+          <button type="button" class="add-to-cart" data-product="Book Haven notebook">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="images/stickers.png" alt="Book Haven sticker sheet with literary themed stickers" />
+          <span class="category-badge">Stationery</span>
+          <h3>Book Haven stickers</h3>
+          <p>A sticker sheet featuring bookish designs for laptops, journals, and gifts.</p>
+          <button type="button" class="add-to-cart" data-product="Book Haven stickers">Add to Cart</button>
+        </article>
+      </section>
+
+      <section
+        id="cartModal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cart-title"
+        hidden
+      >
+        <div class="modal-content">
+          <button id="closeCartBtn" type="button" class="close-button" aria-label="Close cart"></button>
+          <h2 id="cart-title">Your Cart</h2>
+          <p id="emptyCartMessage" class="empty-message">Your cart is empty.</p>
+          <ul id="cartItems" class="cart-items"></ul>
+          <div class="modal-actions">
+            <button id="clearCartBtn" type="button">Clear Cart</button>
+            <button id="processOrderBtn" type="button">Process Order</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section class="newsletter" aria-labelledby="gallery-newsletter-title">
+        <h2 id="gallery-newsletter-title">Subscribe to our newsletter</h2>
+        <form class="newsletter-form">
+          <label for="gallery-newsletter-email">Email address</label>
+          <div class="inline-form">
+            <input id="gallery-newsletter-email" type="email" name="email" placeholder="reader@example.com" required />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="footer-links">
+        <nav aria-label="Social media links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="community.html">Community</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

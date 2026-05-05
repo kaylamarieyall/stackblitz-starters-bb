@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Haven Bookstore | About Us</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%20100%20100'%3E%3Crect width='100' height='100' fill='%232e2e4e'/%3E%3Ctext x='50' y='55' font-family='Arial,sans-serif' font-size='60' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html" aria-label="Book Haven Bookstore home">
+          <img src="images/book-haven-logo.png" alt="Book Haven Bookstore logo" class="logo" />
+        </a>
+        <div>
+          <p class="eyebrow">Discover Your Next Great Read</p>
+          <h1>Book Haven Bookstore</h1>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html" aria-current="page">About Us</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro about-intro about-header">
+        <div class="about-story">
+          <p class="eyebrow">Our Story</p>
+          <h2>A bookstore rooted in literary passion and community connection.</h2>
+          <p>
+            Book Haven was founded on a simple belief: the best bookstores are gathering places, not just retail spaces. We're dedicated to discovering exceptional books, supporting local voices, and creating a welcoming home for readers of all kinds. Whether you're seeking your next adventure, looking to expand your perspective, or simply want to spend time surrounded by stories, you belong here.
+          </p>
+          <p>
+            Our carefully curated selection reflects our love for diverse voices, independent publishers, and the kind of books that stay with you long after the last page.
+          </p>
+        </div>
+        <img
+          src="images/reading-corner.jpg"
+          alt="Cozy reading nook with comfortable seating and bookshelves"
+          class="intro-image"
+        />
+      </section>
+
+      <section class="section-block about-hours-section">
+        <div class="section-heading">
+          <p class="eyebrow">Visit Book Haven</p>
+          <h2>Store Hours & Location</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="hours-table">
+            <caption>
+              Book Haven Bookstore weekly hours
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday-Friday</td>
+                <td>9 a.m. to 8 p.m.</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10 a.m. to 6 p.m.</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>11 a.m. to 5 p.m.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-block about-contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Share Your Thoughts & Custom Orders</h2>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <label for="customerName">Name</label>
+            <input id="customerName" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="customerEmail">Email</label>
+            <input id="customerEmail" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="customerPhone">Phone number</label>
+            <input id="customerPhone" name="phone" type="tel" />
+          </div>
+          <div class="form-row">
+            <label for="customerMessage">Feedback or custom order message</label>
+            <textarea id="customerMessage" name="message" rows="6" required></textarea>
+          </div>
+          <div class="checkbox-row">
+            <input id="customOrder" name="customOrder" type="checkbox" />
+            <label for="customOrder">This is a custom order request</label>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="reset" class="secondary-button">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section class="newsletter" aria-labelledby="about-newsletter-title">
+        <h2 id="about-newsletter-title">Subscribe to our newsletter</h2>
+        <form class="newsletter-form">
+          <label for="about-newsletter-email">Email address</label>
+          <div class="inline-form">
+            <input id="about-newsletter-email" type="email" name="email" placeholder="reader@example.com" required />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="footer-links">
+        <nav aria-label="Social media links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="community.html">Community</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
